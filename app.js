@@ -1,8 +1,11 @@
 const express = require("express");
+var cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3001;
 
+app.use(cors());
 app.get("/", (req, res) => res.type('html').send(html));
+app.get("/location", (req, res) => res.json({ location: "klaten" }));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
