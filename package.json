@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongoose": "^6.7.3"
   },
   "engines": {
     "node": ">=14"
