@@ -22,7 +22,7 @@ app.get("/visitor", async (req, res) => {
   return res.json({ your_ip: req.ip, visitor_number: numVisits });
  });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || 3001, () => console.log(`Example app listening on port ${port}!`));
 
 
 const html = `
